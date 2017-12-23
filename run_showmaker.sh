@@ -2,6 +2,7 @@
 
 cd /var/Website/CLI
 cp -f /vagrant/config_local.php .
+rm -Rf /var/Website/CLI/TEMP/*
 
 git pull
 
