@@ -11,6 +11,7 @@ TO=show@cchits.net
 SERVER=mailserver
 USER=admin
 PASS=admin
+OWNER=Mine
 
 #V1=monthly
 #V2=20161231
@@ -35,7 +36,7 @@ fi
 
 if [ -f /vagrant/mailconfig ]; then
   source /vagrant/mailconfig
-  EXECUTE="sudo php showmaker.php $V1 $V2 $V3 $V4 | sendemail -f '$FROM' -t '$TO' -u 'Running ShowMaker' -s '$SERVER' -xu '$USER' -xp '$PASS' -o timeout=0 -o tls=auto"
+  EXECUTE="sudo php showmaker.php $V1 $V2 $V3 $V4 | sendemail -f '$FROM' -t '$TO' -u 'Running ShowMaker ($OWNER)' -s '$SERVER' -xu '$USER' -xp '$PASS' -o timeout=0 -o tls=auto"
 else
   EXECUTE="sudo php showmaker.php $V1 $V2 $V3 $V4"
 fi
