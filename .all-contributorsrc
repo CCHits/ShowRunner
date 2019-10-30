@@ -30,6 +30,17 @@
         "maintenance",
         "userTesting"
       ]
+    },
+    {
+      "login": "thelovebug",
+      "name": "Dave Lee",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/2915687?v=4",
+      "profile": "https://thelovebug.org/",
+      "contributions": [
+        "ideas",
+        "infra",
+        "userTesting"
+      ]
     }
   ],
   "contributorsPerLine": 7,
