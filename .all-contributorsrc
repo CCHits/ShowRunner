@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "ymauray",
+      "name": "Yannick Mauray",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2527227?v=4",
+      "profile": "https://frenchguy.ch",
+      "contributions": [
+        "ideas",
+        "infra",
+        "userTesting"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "ShowRunner",
+  "projectOwner": "CCHits",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
