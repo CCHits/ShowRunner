@@ -15,6 +15,21 @@
         "infra",
         "userTesting"
       ]
+    },
+    {
+      "login": "JonTheNiceGuy",
+      "name": "Jon \"The Nice Guy\" Spriggs",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/228671?v=4",
+      "profile": "http://jon.sprig.gs",
+      "contributions": [
+        "bug",
+        "code",
+        "doc",
+        "example",
+        "infra",
+        "maintenance",
+        "userTesting"
+      ]
     }
   ],
   "contributorsPerLine": 7,
