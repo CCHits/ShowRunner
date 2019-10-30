@@ -1,5 +1,5 @@
 # CCHits ShowRunner
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 Sometimes you don't have time to ssh to somewhere to execute the showmaker. Enter ShowRunner
 
@@ -19,6 +19,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://frenchguy.ch"><img src="https://avatars3.githubusercontent.com/u/2527227?v=4" width="100px;" alt="Yannick Mauray"/><br /><sub><b>Yannick Mauray</b></sub></a><br /><a href="#ideas-ymauray" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-ymauray" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#userTesting-ymauray" title="User Testing">📓</a></td>
+    <td align="center"><a href="http://jon.sprig.gs"><img src="https://avatars3.githubusercontent.com/u/228671?v=4" width="100px;" alt="Jon "The Nice Guy" Spriggs"/><br /><sub><b>Jon "The Nice Guy" Spriggs</b></sub></a><br /><a href="https://github.com/CCHits/ShowRunner/issues?q=author%3AJonTheNiceGuy" title="Bug reports">🐛</a> <a href="https://github.com/CCHits/ShowRunner/commits?author=JonTheNiceGuy" title="Code">💻</a> <a href="https://github.com/CCHits/ShowRunner/commits?author=JonTheNiceGuy" title="Documentation">📖</a> <a href="#example-JonTheNiceGuy" title="Examples">💡</a> <a href="#infra-JonTheNiceGuy" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-JonTheNiceGuy" title="Maintenance">🚧</a> <a href="#userTesting-JonTheNiceGuy" title="User Testing">📓</a></td>
   </tr>
 </table>
 
