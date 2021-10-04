@@ -1,7 +1,12 @@
 #!/bin/bash
 
+apt update && apt full-upgrade -y
+
 cd /var/Website/CLI
-cp -f /vagrant/config_local.php .
+if [ -e /vagrant/config_local.php ]
+then
+  cp -f /vagrant/config_local.php .
+fi
 rm -Rf /var/Website/CLI/TEMP/*
 
 git pull
@@ -36,7 +41,7 @@ fi
 
 if [ -f /vagrant/mailconfig ]; then
   source /vagrant/mailconfig
-  EXECUTE="sudo php showmaker.php $V1 $V2 $V3 $V4 | sendemail -f '$FROM' -t '$TO' -u 'Running ShowMaker ($OWNER)' -s '$SERVER' -xu '$USER' -xp '$PASS' -o timeout=0 -o tls=auto"
+  EXECUTE="sudo php showmaker.php $V1 $V2 $V3 $V4 | tee /tmp/showrunner | sendemail -f '$FROM' -t '$TO' -u 'Running ShowMaker ($OWNER)' -s '$SERVER' -xu '$USER' -xp '$PASS' -o timeout=0 -o tls=auto && cat /tmp/showrunner"
 else
   EXECUTE="sudo php showmaker.php $V1 $V2 $V3 $V4"
 fi
