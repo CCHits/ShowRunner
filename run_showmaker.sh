@@ -41,7 +41,7 @@ fi
 
 if [ -f /vagrant/mailconfig ]; then
   source /vagrant/mailconfig
-  EXECUTE="sudo php showmaker.php $V1 $V2 $V3 $V4 | tee /tmp/showrunner | sendemail -f '$FROM' -t '$TO' -u 'Running ShowMaker ($OWNER)' -s '$SERVER' -xu '$USER' -xp '$PASS' -o timeout=0 -o tls=auto && cat /tmp/showrunner"
+  EXECUTE="sudo php showmaker.php $V1 $V2 $V3 $V4 | tee /tmp/showrunner && cat /vagrant/email_header_template.txt /tmp/showrunner | sed -e sed -e \"s/FROM_NAME/ShowMaker/;s/FROM_EMAIL/${FROM}/;s/TO_NAME/${TO}/;s/TO_EMAIL/${TO}/;s/SUBJECT/Running ShowMaker ($OWNER)/\" | curl --url \"smtps://${SERVER}\" --insecure --ssl-reqd --mail-from \"${FROM}\" --mail-rcpt \"${TO}\" --user \"${USER}:${PASS}\" --upload-file -"
 else
   EXECUTE="sudo php showmaker.php $V1 $V2 $V3 $V4"
 fi
